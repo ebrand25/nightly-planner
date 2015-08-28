@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Nightly Planner</title>
+    <link rel="stylesheet" href = css/style.css>
+  </head>
+
+  <body>
+    <h1>Welcome to the Nightly Planner</h1>
+      <form method="POST" action="/results">
+        <p>Homework Start Time:</p>
+        <p> Hours : Minutes <input type="text" name="start_hours"> : <input type="text" name="start_minutes">
+        <input type="radio" name="start_am_pm" value="AM">AM
+        <input type="radio" name="start_am_pm" value="PM">PM</p><br>
+
+        <h3>Enter your afternoon activities with their start time and end time.</h3>
+
+        <h4>Activity 1:</h4>
+        <p>Name: </p><input type="text" name="name_a1">
+        <p>Start time: </p>
+        <p>Hours : Minutes <input type="text" name="start_hours_a1"> : <input type="text" name="start_minutes_a1">
+        <input type="radio" name="start_am_pm_a1" value="AM">AM
+        <input type="radio" name="start_am_pm_a1" value="PM">PM</p>
+        <p>End Time:</p>
+        <p>Hours : Minutes <input type="text" name="end_hours_a1"> : <input type="text" name="end_minutes_a1">
+        <input type="radio" name="end_am_pm_a1" value="AM">AM
+          <input type="radio" name="end_am_pm_a1" value="PM">PM</p><br>
+
+<!--         <br><h4>Activity 2:</h4>
+        <p>Name: </p><input type="text" name="name_a2">
+        <p>Start time: </p>
+        <p>Hours : Minutes <input type="text" name="start_hours_a2"> : <input type="text" name="start_minutes_a2">
+        <input type="radio" name="start_am_pm_a2" value="AM">AM
+        <input type="radio" name="start_am_pm_a2" value="PM">PM</p>
+        <p>End Time:</p>
+        <p>Hours : Minutes <input type="text" name="end_hours_a2"> : <input type="text" name="end_minutes_a2">
+        <input type="radio" name="end_am_pm_a2" value="AM">AM
+          <input type="radio" name="end_am_pm_a2" value="PM">PM</p><br>
+
+        <br><h4>Activity 3:</h4>
+        <p>Name: </p><input type="text" name="name_a3">
+        <p>Start time: </p>
+        <p>Hours : Minutes <input type="text" name="start_hours_a3"> : <input type="text" name="start_minutes_a3">
+        <input type="radio" name="start_am_pm_a3" value="AM">AM
+        <input type="radio" name="start_am_pm_a3" value="PM">PM</p>
+        <p>End Time:</p>
+        <p>Hours : Minutes <input type="text" name="end_hours_a3"> : <input type="text" name="end_minutes_a3">
+        <input type="radio" name="end_am_pm_a3" value="AM">AM
+          <input type="radio" name="end_am_pm_a3" value="PM">PM</p><br>
+
+        <br><h4>Activity 4:</h4>
+        <p>Name: </p><input type="text" name="name_a4">
+        <p>Start time: </p>
+        <p>Hours : Minutes <input type="text" name="start_hours_a4"> : <input type="text" name="start_minutes_a4">
+        <input type="radio" name="start_am_pm_a4" value="AM">AM
+        <input type="radio" name="start_am_pm_a4" value="PM">PM</p>
+        <p>End Time:</p>
+        <p>Hours : Minutes <input type="text" name="end_hours_a4"> : <input type="text" name="end_minutes_a4">
+        <input type="radio" name="end_am_pm_a4" value="AM">AM
+         <input type="radio" name="end_am_pm_a4" value="PM">PM</p><br>
+
+        <br><h4>Activity 5:</h4>
+        <p>Name: </p><input type="text" name="name_a5">
+        <p>Start time: </p>
+        <p>Hours : Minutes <input type="text" name="start_hours_a5"> : <input type="text" name="start_minutes_a5">
+        <input type="radio" name="start_am_pm_a5" value="AM">AM
+        <input type="radio" name="start_am_pm_a5" value="PM">PM</p>
+        <p>End Time:</p>
+        <p>Hours : Minutes <input type="text" name="end_hours_a5"> : <input type="text" name="end_minutes_a5">
+        <input type="radio" name="end_am_pm_a5" value="AM">AM
+          <input type="radio" name="end_am_pm_a5" value="PM">PM</p><br>
+
+
+        <h3>Enter homework assignments with their estimated time and priority.</h3>
+
+        <h4>Assignment 1: </h4>
+        <p>Name: </p><input type="text" name="name_h1"><br>
+        <p>Estimated time (minutes): </p><input type="text" name="estimated_time_h1"><br>
+        <p>Priority: </p><input type="text" name="priority_h1"><br>
+
+        <br><h4>Assignment 2: </h4>
+        <p>Name: </p><input type="text" name="name_h2"><br>
+        <p>Estimated time (minutes): </p><input type="text" name="inputted_estimated_time_h2"><br>
+        <p>Priority: </p><input type="text" name="inputted_priority_h2"><br>
+
+        <br><h4>Assignment 3: </h4>
+        <p>Name: </p><input type="text" name="name_h3"><br>
+        <p>Estimated time (minutes): </p><input type="text" name="inputted_estimated_time_h3"><br>
+        <p>Priority: </p><input type="text" name="inputted_priority_h3"><br>
+
+        <br><h4>Assignment 4: </h4>
+        <p>Name: </p><input type="text" name="name_h4"><br>
+        <p>Estimated time (minutes): </p><input type="text" name="inputted_estimated_time_h4"><br>
+        <p>Priority: </p><input type="text" name="inputted_priority_h4"><br>
+
+        <br><h4>Assignment 5: </h4>
+        <p>Name: </p><input type="text" name="name_h5"><br>
+        <p>Estimated time (minutes): </p><input type="text" name="inputted_estimated_time_h5"><br>
+        <p>Priority: </p><input type="text" name="inputted_priority_h5"><br>
+
+        <br><h4>Assignment 6: </h4>
+        <p>Name: </p><input type="text" name="name_h6"><br>
+        <p>Estimated time (minutes): </p><input type="text" name="inputted_estimated_time_h6"><br>
+        <p>Priority: </p><input type="text" name="inputted_priority_h6"><br>
+
+        <br><h4>Assignment 7: </h4>
+        <p>Name: </p><input type="text" name="name_h7"><br>
+        <p>Estimated time (minutes): </p><input type="text" name="inputted_estimated_time_h7"><br>
+        <p>Priority: </p><input type="text" name="inputted_priority_h7"><br>
+
+        <br><h4>Assignment :8 </h4>
+        <p>Name: </p><input type="text" name="name_h8"><br>
+        <p>Estimated time (minutes): </p><input type="text" name="inputted_estimated_time_h8"><br>
+        <p>Priority: </p><input type="text" name="inputted_priority_h8"><br>
+ -->
+        <br><input type="submit">
+      </form>
+  </body>
+</html>

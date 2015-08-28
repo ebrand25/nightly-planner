@@ -1,0 +1,39 @@
+h1 {
+  text-align: center;
+  color: white;
+}
+
+body {
+  background-color: gray;
+  border: 5px solid black;
+  text-align: left;
+  margin: 2cm;
+  font: 30px cursive, serif;
+  padding-left: 1cm;
+}
+
+p.resultsheading {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+
+.activitybox h1 {
+  border: 5px solid black;
+  color: black;
+  font-size: 30px;
+  padding-right: 1cm
+}
+
+.assignmentbox h1 {
+  border: 5px solid black;
+  color: black;
+  font-size: 30px;
+  padding-right: 1cm
+}
+
+.linkindex {
+  text-align: center;
+}
+
+
