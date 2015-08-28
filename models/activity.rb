@@ -7,13 +7,12 @@ class Activity
     end_minutes = end_minutes.to_i
     all_start_minutes = (start_hours * 60) + start_minutes
     if start_am_pm == "PM"
-      return all_start_minutes + (12 * 60)
+      all_start_miutes = all_start_minutes + (12 * 60)
     else
-      return all_start_minutes
     end
 
     all_end_minutes = (end_hours * 60) + end_minutes
-    if end_am_pm.upcase == "PM"
+    if end_am_pm == "PM"
       all_end_minutes = all_end_minutes + (12 * 60)
     else
     end
